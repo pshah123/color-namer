@@ -21,7 +21,7 @@ function calculateColor(hsv) {
     let colortext;
     if (hsv[0] !== 0) {
         hsv[0] = Math.round(hsv[0] * 100);
-        hue = hsv[0].toString().split(``);
+        let hue = hsv[0].toString().split(``);
         const last = hue.length - 1;
         hue[last] = parseInt(hue[last]);
         if (hue[last] < 2.5) {
@@ -66,9 +66,9 @@ function calculateColor(hsv) {
             }
         }
     } else {
-        for (let i = 0; i < color_lookup.length; i++) {
-            if ((color_lookup[i].h === hsv[0]) && (color_lookup[i].s === hsv[1]) && (color_lookup[i].b === hsv[2])) {
-                colortext = color_lookup[i].name;
+        for (let i = 0; i < colorLookUp.length; i++) {
+            if ((colorLookUp[i].h === hsv[0]) && (colorLookUp[i].s === hsv[1]) && (colorLookUp[i].b === hsv[2])) {
+                colortext = colorLookUp[i].name;
                 break;
             }
         }
@@ -160,7 +160,7 @@ const xcp = [{
     },
 ];
 
-const color_lookup = [{
+const colorLookUp = [{
         "h": 0,
         "s": 0,
         "b": 0,
