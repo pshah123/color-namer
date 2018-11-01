@@ -1,10 +1,10 @@
 {
   "name": "colornamer",
-  "version": "1.0.8",
-  "description": "A simple package that gives back the color-name of a hex or rgb value",
+  "version": "0.0.2",
+  "description": "Try to name colors based on HSV cone.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest index.test.js"
   },
   "keywords": [
     "color",
@@ -14,8 +14,10 @@
     "visually-challenged"
   ],
   "contributors": [
-    "MathuraMG",
-    "lmhyphenn <luis.morales@nyu.edu> (http://lm-n.com/)"
+    "pshah123"
   ],
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
