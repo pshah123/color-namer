@@ -11,7 +11,7 @@ npm install pshah123/color-namer
 Use:
 ``` js
 const colornamer = require('colornamer')
-colornamer.hexColorName('#cc5555) // Indian red
+colornamer.hexColorName('#cc5555') // Indian red
 ```
 
 Color object:
