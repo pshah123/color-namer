@@ -160,7 +160,7 @@ const xcp = [{
     },
 ];
 
-const colorLookUp = [{
+exports.colorLookUp = const colorLookUp = [{
         "h": 0,
         "s": 0,
         "b": 0,
