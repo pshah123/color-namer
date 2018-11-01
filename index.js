@@ -160,7 +160,7 @@ const xcp = [{
     },
 ];
 
-exports.colorLookUp = const colorLookUp = [{
+const colorLookUp = [{
         "h": 0,
         "s": 0,
         "b": 0,
@@ -737,3 +737,5 @@ exports.colorLookUp = const colorLookUp = [{
         "name": `magenta`
     },
 ];
+
+exports.colorLookUp = colorLookUp
