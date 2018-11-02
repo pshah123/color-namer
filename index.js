@@ -14,7 +14,7 @@ const rgb_to_hsv = (r, g, b) => {
         case g: h = (b - r) + d * 2; h /= 6 * d; break;
         case b: h = (r - g) + d * 4; h /= 6 * d; break;
     }
-    return [h*255, s*100, v*100]
+    return [h*360, s*100, v*100]
 }
 
 const hex_to_rgb = hex => {
