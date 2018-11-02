@@ -4370,9 +4370,6 @@ module.exports = [{
 	"name": "Weldon Blue",
 	"hsv": [204, 28, 67]
 }, {
-	"name": "Wenge",
-	"hsv": [7, 18, 39]
-}, {
 	"name": "Wheat",
 	"hsv": [39, 27, 96]
 }, {

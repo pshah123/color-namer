@@ -34,7 +34,7 @@ const compute = hsv => colors
 
 module.exports = {
     "hsvColorName": (h, s, v) => {
-        assert(0 <= h && h <= 255, 'Hue should be between 0 and 255')
+        assert(0 <= h && h <= 360, 'Hue should be between 0 and 360')
         assert(0 <= s && s <= 100, 'Saturation should be between 0 and 100')
         assert(0 <= v && v <= 100, 'Vibrance/Brightness should be between 0 and 100')
         return compute([h, s, v])[0]
