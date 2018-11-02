@@ -12,7 +12,7 @@ const compute = hsv => colors
     .map(c => ((c.distance = hsvDistance(hsv, c.hsv)) && c) || c)
     .sort((c1, c2) => c1.distance < c2.distance ? -1 : 1)
 
-const clean = thresh => colors.filter(color => compute(color.hsv)[1].distance < thresh)
+const clean = thresh => colors.filter(color => compute(color.hsv)[1].distance > thresh)
 
 module.exports =
     thresh =>

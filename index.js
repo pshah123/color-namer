@@ -1,4 +1,4 @@
-const colors = require('./colors-1')
+const colors = require('./colors-30')
 const assert = require('assert')
 Math.radians = degrees => degrees * Math.PI / 180;
 
