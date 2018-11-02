@@ -23,8 +23,8 @@ const hex_to_rgb = hex => {
 }
 
 const hsvDistance = (hsv1, hsv2) => (
-    ((Math.sin(Math.radians(hsv1[0])) * (hsv1[1] / 100) * (hsv1[2] / 100) - Math.sin(Math.radians(hsv2[0])) * (hsv2[1]) / 100 * (hsv2[2]) / 100) ** 2) +
-    ((Math.cos(Math.radians(hsv1[0])) * (hsv1[1] / 100) * (hsv1[2] / 100) - Math.cos(Math.radians(hsv2[0])) * (hsv2[1]) / 100 * (hsv2[2]) / 100) ** 2) +
+    ((Math.sin(Math.radians(hsv1[0])) * 100 * (hsv1[1] / 100) * (hsv1[2] / 100) - Math.sin(Math.radians(hsv2[0])) * 100 * (hsv2[1]) / 100 * (hsv2[2]) / 100) ** 2) +
+    ((Math.cos(Math.radians(hsv1[0])) * 100 * (hsv1[1] / 100) * (hsv1[2] / 100) - Math.cos(Math.radians(hsv2[0])) * 100 * (hsv2[1]) / 100 * (hsv2[2]) / 100) ** 2) +
     ((hsv1[2] - hsv2[2]) ** 2)
 )
 

@@ -4169,9 +4169,6 @@ module.exports = [{
 	"name": "Ultra red",
 	"hsv": [350, 57, 99]
 }, {
-	"name": "Umber",
-	"hsv": [21, 28, 39]
-}, {
 	"name": "Unbleached silk",
 	"hsv": [22, 21, 100]
 }, {
